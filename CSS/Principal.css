@@ -1,0 +1,30 @@
+ body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .welcome {
+            font-size: 1.5em;
+        }
+        .logout-btn {
+            background: white;
+            color: #764ba2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dashboard {
+            padding: 40px;
+            text-align: center;
+        }
