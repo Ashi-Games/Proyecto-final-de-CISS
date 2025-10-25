@@ -1,30 +1,167 @@
- body {
-            font-family: 'Montserrat', sans-serif;
-            background: #f8f9fa;
-            margin: 0;
-            padding: 0;
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .header {
+        
+        .navbar-custom {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 1rem 0;
         }
-        .welcome {
-            font-size: 1.5em;
+        
+        .navbar-custom .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.5rem;
         }
-        .logout-btn {
+        
+        .navbar-custom .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+        }
+        
+        .navbar-custom .nav-link:hover {
+            opacity: 0.8;
+        }
+        
+        .navbar-custom .btn-carrito {
             background: white;
             color: #764ba2;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: transform 0.2s;
         }
-        .dashboard {
-            padding: 40px;
+        
+        .navbar-custom .btn-carrito:hover {
+            transform: scale(1.05);
+        }
+        
+        .hero-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
             text-align: center;
+        }
+        
+        .hero-banner h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero-banner p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn-hero {
+            background: white;
+            color: #764ba2;
+            padding: 12px 40px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: none;
+            transition: transform 0.2s;
+        }
+        
+        .btn-hero:hover {
+            transform: scale(1.05);
+        }
+        
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 300px;
+            background: #e9ecef;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-card .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 20px;
+            color: white;
+        }
+        
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-card img {
+            height: 300px;
+            object-fit: cover;
+            background: #f8f9fa;
+        }
+        
+        .btn-add-cart {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .btn-add-cart:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+        
+        .promo-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        .search-bar {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .search-bar::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .search-bar:focus {
+            background: rgba(255,255,255,0.3);
+            color: white;
+            border-color: white;
+            box-shadow: none;
         }
